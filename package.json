@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "NetBurst, the homepage for the wounded saint",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx @11ty/eleventy --serve",
+    "clean": "rm -rf _dist/",
+    "build": "npx @11ty/eleventy",
+    "deploy": "",
+    "upload": ""
   },
   "repository": {
     "type": "git",
@@ -17,6 +22,12 @@
   },
   "homepage": "https://github.com/NetBurstDotNet/website#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.11.0",
+    "eleventy-plugin-sass": "^1.1.1",
+    "eleventy-plugin-seo": "^0.5.1"
+  },
+  "engines": {
+    "node": "^12",
+    "npm": "^6"
   }
 }
