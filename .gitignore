@@ -1,0 +1,5 @@
+.env*
+*.log
+_dist/
+node_modules/
+.history/

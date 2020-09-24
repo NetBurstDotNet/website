@@ -1,0 +1,22 @@
+{
+  "name": "netburstdotnet",
+  "version": "1.0.0",
+  "description": "NetBurst, the homepage for the wounded saint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NetBurstDotNet/website.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/NetBurstDotNet/website/issues"
+  },
+  "homepage": "https://github.com/NetBurstDotNet/website#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
