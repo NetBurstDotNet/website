@@ -7,9 +7,10 @@
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
     "clean": "rm -rf _dist/",
-    "build": "npx @11ty/eleventy",
+    "build": "npm run clean && npx @11ty/eleventy",
     "deploy": "",
-    "upload": ""
+    "upload": "",
+    "ghpublish": "npm run build && node ghpages.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "eleventy-plugin-sass": "^1.1.1",
-    "eleventy-plugin-seo": "^0.5.1"
+    "eleventy-plugin-seo": "^0.5.1",
+    "gh-pages": "^3.1.0"
   },
   "engines": {
     "node": "^12",

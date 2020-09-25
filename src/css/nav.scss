@@ -1,0 +1,26 @@
+.menu.homeNav {
+  padding: 10px;
+  background-color: #3366cc;
+  
+  .menu-label {
+    color: lightgray;
+  }
+
+  .menu-list {
+    a {
+      &:hover {
+        background-color: #24478f;
+        color: #ffffff;
+      }
+      img {
+        height: 1em;
+        padding-right: 5px;
+        vertical-align: middle;
+      }
+      span {
+        vertical-align: middle;
+      }
+      color: #ffffff;
+    }
+  }
+}
