@@ -4,10 +4,20 @@
   
   .menu-label {
     color: lightgray;
+    text-transform: capitalize;
+    font-size: inherit;
+    &:not(:last-child) {
+      margin-bottom: 0.5em;
+    }
+    &:not(:first-child) {
+      margin-top: 0.5em;
+    }
   }
 
   .menu-list {
     a {
+      padding: 0.35rem 0.6rem;
+
       &:hover {
         background-color: #24478f;
         color: #ffffff;

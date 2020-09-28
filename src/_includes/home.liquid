@@ -1,25 +1,29 @@
+---
+permalink: "{{ page.filePathStem }}.html"
+---
 <!DOCTYPE html>
 <html>
   <head>
     {% include head %}
     
-    <link rel="stylesheet" href="css/site.css"/>
-    <link rel="stylesheet" href="css/home-header.css"/>
-    <link rel="stylesheet" href="css/md.css"/>
-    <link rel="stylesheet" href="css/nav.css"/>
+    <link rel="stylesheet" href="/css/site.css"/>
+    <link rel="stylesheet" href="/css/home-header.css"/>
+    <link rel="stylesheet" href="/css/md.css"/>
+    <link rel="stylesheet" href="/css/nav.css"/>
+    <link rel="stylesheet" href="/css/footer.css"/>
   </head>
   <body>
     {% include home-header %}
-    <div class="columns">
+    <div class="columns nbhomepage">
       <div class="column is-one-quarter-desktop is-one-quarter-tablet">
         {% include nav %}
       </div>
       <div class="column is-three-quarters-desktop is-three-quarters-tablet">
-        <div class="content md">
+        <div class="content md px-6 py-6">
           {{ content }}
         </div>
+        {% include footer %}
       </div>
     </div>
-    {% include footer %}
   </body>
 </html>

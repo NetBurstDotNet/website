@@ -1,18 +1,49 @@
+---
+permalink: "{{ page.filePathStem }}.html"
+---
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/md.css"></style>
     {% include head %}
+    
+    <link rel="stylesheet" href="/css/site.css"/>
+    <link rel="stylesheet" href="/css/article.css"/>
+    <link rel="stylesheet" href="/css/article-header.css"/>
+    <link rel="stylesheet" href="/css/md.css"/>
+    <link rel="stylesheet" href="/css/footer.css"/>
+    <link rel="stylesheet" href="/css/nav.css"/>
+
+    <style>.vcVerseLink{text-decoration:none;}</style>
   </head>
   <body>
-    {% include header %}
-    <div>
-    {% include nav %}
+    <section class="hero">
+      <div class="hero-body nbheader">
+        <div class="container center"> 
+          <p><img alt="header image" id="banner"
+            {% if bgimage %}
+              src="{{ bgimage }}" 
+            {% else %}
+              src="" 
+              style="display: none;"
+            {% endif %}
+          ></p>
+          {{ content | getMdHeader }}
+        </div>
+      </div>
+    </section>
+    
+    <div class="columns nbarticle">
+      <div class="column is-one-quarter-desktop is-one-quarter-tablet">
+        {% include nav %}
+      </div>
+      <div class="column is-three-quarters-desktop is-three-quarters-tablet">
+        <div class="content md px-6 py-6">
+          {{ content | getMdContent }}
+        </div>
+        {% include footer %}
+      </div>
     </div>
-    <div>
-    <h1>{{ title }}</h1>
-    {{ content }}
-    </div>
-    {% include footer %}
+
+    <script type="text/javascript" src="http://av1611.com/verseclick/verseclick.js"></script>
   </body>
 </html>

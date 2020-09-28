@@ -1,4 +1,4 @@
-.content {
+.nbhomepage .content {
   font-size: 18px;
   img {
     display: block;
@@ -7,6 +7,8 @@
   ol {
     li {
       p {
+        // Homepage margin in list at bottom of page, the <p> tags
+        // are too close to the next <ol><li>, need some help spacing
         margin-bottom: 1em;
       }
     }

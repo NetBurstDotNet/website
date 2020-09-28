@@ -1,4 +1,22 @@
+body {
+  font-family: auto;
+  //background-color: rgb(102, 153, 204);
+  background-color: #777777;
+}
+
 body > .columns {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.content {
+  background-color: white;
+}
+
+.hero {
+  max-width: 800px;
+  margin: 0 auto;
+  //background-color: white;
+}
+
+// <BODY bgcolor="#6699cc" TEXT="#000033" LINK="#0066cc" VLINK="#003366" ALINK="#0000FF"><p>
