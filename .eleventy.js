@@ -68,6 +68,10 @@ module.exports = function(eleventyConfig) {
     return `<p class="scripture"><span class="verse">${verse}</span> ${content}</p>`
   });
 
+  eleventyConfig.addShortcode('links', function () {
+    return `<p class="links"><span>Links</span></p>`;
+  })
+
   eleventyConfig.addPlugin(pluginInjector, {
     watch: [path.join('./', input, 'js/bannerizer.js'), path.join('./', input, '/images/banners/')],
     inject: debouncedWriter,

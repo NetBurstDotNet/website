@@ -12,21 +12,21 @@ permalink: "{{ page.filePathStem }}.html"
     <link rel="stylesheet" href="/css/md.css"/>
     <link rel="stylesheet" href="/css/footer.css"/>
     <link rel="stylesheet" href="/css/nav.css"/>
-
-    <style>.vcVerseLink{text-decoration:none;}</style>
   </head>
   <body>
-    <section class="hero">
+    <section class="hero"> 
+      <img alt="header image" id="banner"
+        {% if bgimage %}
+          src="{{ bgimage }}" 
+        {% else %}
+          src="" 
+          style="display: none;"
+        {% endif %}
+      />
       <div class="hero-body nbheader">
+       
         <div class="container center"> 
-          <p><img alt="header image" id="banner"
-            {% if bgimage %}
-              src="{{ bgimage }}" 
-            {% else %}
-              src="" 
-              style="display: none;"
-            {% endif %}
-          ></p>
+          
           {{ content | getMdHeader }}
         </div>
       </div>

@@ -2,11 +2,17 @@ body {
   font-family: auto;
   //background-color: rgb(102, 153, 204);
   background-color: #777777;
+  color: black;
 }
 
 body > .columns {
   max-width: 800px;
   margin: 0 auto;
+  background-color: white;
+}
+
+.footer {
+  background-color: white;
 }
 
 .content {
@@ -20,3 +26,4 @@ body > .columns {
 }
 
 // <BODY bgcolor="#6699cc" TEXT="#000033" LINK="#0066cc" VLINK="#003366" ALINK="#0000FF"><p>
+.vcVerseLink{text-decoration:none;}

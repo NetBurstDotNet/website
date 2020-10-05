@@ -1,4 +1,4 @@
-.nbhomepage .content {
+.nbhomepage .content, .nbarticle .content {
   font-size: 18px;
   img {
     display: block;
@@ -12,5 +12,26 @@
         margin-bottom: 1em;
       }
     }
+  }
+
+  .links {
+    span {
+      font-weight: bold;
+      color: #0066cc;
+      display: inline-block;
+      font-size: xx-large;
+    }
+
+    text-align: center;
+  }
+
+  blockquote {
+    background-color: white;
+    border: none;
+  }
+
+  a {
+    text-decoration: revert;
+    color: revert;
   }
 }
