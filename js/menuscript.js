@@ -21,6 +21,7 @@
     if (!isMenuOpen) return;
     isMenuOpen = false;
     bg.className = 'bg';
+    menu.scrollTo(0, 0);
     menu.className = ORIGINAL_MENU_CLASS;
     bodyScrollLock.enableBodyScroll(menu);
   }
